@@ -1,0 +1,7 @@
+---
+- hosts: win
+  tasks:
+    - name: Install tomcat
+      win_chocolatey:
+        name: tomcat
+        state: present

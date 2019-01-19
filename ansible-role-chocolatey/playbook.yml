@@ -1,0 +1,6 @@
+---
+- hosts: win
+  roles:
+     - role: deekayen, chocolatey
+       chocolatey_installer: https://chocolatey.org/install.psl
+       chocolatey_path: c:/ProgramData/chocolatey

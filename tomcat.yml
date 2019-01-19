@@ -1,0 +1,17 @@
+---
+- hosts: centos
+  become: yes
+  vars:
+    tomcat_version: 8.5.23
+
+    tomcat_permissions_production: True
+
+    tomcat_users:
+      - username: "tomcat"
+        password: "zippyops"
+        roles: "tomcat,admin,manager,manager-gui"
+      - username: "exampleuser"
+        password: "zippyops001"
+        roles: "tomcat"
+  roles:
+    - role: zaxos.tomcat-ansible-role  

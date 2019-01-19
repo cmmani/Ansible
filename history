@@ -1,0 +1,144 @@
+    1  cd ..
+    2  exit
+    3  sudo yum install epel-release -y
+    4  vi sudo
+    5  exit
+    6  sudo yum install epel-release -y
+    7  exit
+    8  sudo yum install epel-release -y
+    9  yum updaten -y
+   10  sudo yum updaten -y
+   11  sudo yum update -y
+   12  sudo yum install ansible -y
+   13  cd /etc/ansible/
+   14  ls
+   15  clear
+   16  cd /etc/ansible/
+   17  ls
+   18  clear
+   19  ls
+   20  vi hosts 
+   21  cp hosts hosts.bak
+   22  sudo cp hosts hosts.bak
+   23  ls
+   24  vi hosts
+   25  sudo vi hosts
+   26  cat hosts
+   27  vi /etc/hosts
+   28  cat vi /etc/hosts
+   29  sudo  vi /etc/hosts
+   30  clear
+   31  ls
+   32  hostname
+   33  cat hosts
+   34  cat visudo
+   35  cat /etc/sudoers
+   36  exit
+   37  logout
+   38  ping 192.168.1.107
+   39  ping 192.168.1.108
+   40  ping 192.168.1.45
+   41  ping ansiblenode1.zippyops.com
+   42  pwd
+   43  ssh_keygen
+   44  sudo ssh_keygen
+   45  ssh-keygen
+   46  ssh-copy-id ansible@192.168.1.107
+   47  ssh-copy-id ansible@192.168.1.108
+   48  ping 192.168.1.45
+   49  ansible centos -m ping
+   50  ls
+   51  cd /etc/ansible/
+   52  ls
+   53  vi hosts
+   54  ls
+   55  ansible ubuntu -m ping
+   56  ansible centos -m ping
+   57  ssh-copy-id ansible@192.168.1.107
+   58  ansible centos -m ping
+   59  ansible ubuntu -m ping
+   60  ssh-copy-id ansible@192.168.1.107
+   61  ansible ubuntu -m ping
+   62  ping 192.168.1.107
+   63  ansible all -m ping
+   64  ssh-copy-id ansible@192.168.1.106
+   65  ansible all -m ping
+   66  ls
+   67  vi /etc/hosts
+   68  ping 192.168.1.107
+   69  yum install python2-pip -y
+   70  sudo yum install python2-pip -y
+   71  sudo pip install "pywinrm>=0.3.0" -y
+   72  sudo pip install "pywinrm>=0.3.0"
+   73  sudo pip install --upgrade pip
+   74  vi /etc/hosts
+   75  ping 192.168.1.45
+   76  ansible win -i hosts -m win_ping
+   77  ssh-copy-id zippyops@192.168.1.45
+   78  sudo pip install "pywinrm>=0.3.0"
+   79  ansible win -i hosts -m win_ping
+   80  zippyops  win -i hosts -m win_ping
+   81  touch history.txt
+   82  ls
+   83  cat history
+   84  cd ..
+   85  ls -la
+   86  ansible all -m ping
+   87  cat ~/.bash_history
+   88  cat >.bash_history
+   89  sudo cat >.bash_history
+   90  history > file
+   91  sudo history > file
+   92  sudo history < file
+   93  history > file
+   94  cd /etc/hosts
+   95  vi /etc/hosts
+   96  cat ~/.bash_history
+   97  ansible win -i hosts -m win_ping
+   98  ls
+   99  cd ansible/
+  100  ansible win -i hosts -m win_ping
+  101  ansible win -m win_ping
+  102  cat ~/.bash_history
+  103  ansible win -m win_ping
+  104  ansible Win -m win_ping
+  105  cat /etc/ansible/
+  106  cd /etc/ansible/
+  107  ls
+  108  cat hosts
+  109  visudo
+  110  cd ~
+  111  exit
+  112  ansible 192.168.1.45 -m win_ping
+  113  cat > history
+  114  ansible 192.168.1.45 -m win_ping
+  115  cat ~/.bash_history
+  116  vi ping.yml
+  117  pwd
+  118  vi ping.yml
+  119  ansible-playbook ping.yml
+  120  vi ping.yml
+  121  ansible-playbook ping.yml
+  122  vi ping.yml
+  123  ansible-playbook ping.yml
+  124  vi ping.yml
+  125  ansible -m command -a "df -h" all --ask-pass
+  126  ansible -m command -a "df -h" centos,ubuntu --ask-pass
+  127  ansible -m command -a "java -version" centos,ubuntu --ask-pass
+  128  ansible -m command -a "mkdir demo" centos,ubuntu --ask-pass
+  129  ansible -m command -a "rm -rf demo" centos,ubuntu --ask-pass
+  130  ansible -m command -a "java -version" centos,ubuntu --ansible
+  131  ansible -m command -a "java -version" centos,ubuntu
+  132  ansible -m command -a "java -version" centos
+  133  ansible -m command -a "free -mt" all
+  134  ansible -m command -a "ip config" win
+  135  ansible -m command -a "ifconfig" win
+  136  ansible -m command -a "ipconfig" win
+  137  ansible -m command -a "hostname" all
+  138  ansible -m win_shell -a "hostname" win
+  139  ansible -m bash -a "hostname" all
+  140  ls
+  141  cat ping.retry 
+  142  cat history
+  143  cat history.txt 
+  144  history > history

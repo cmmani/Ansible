@@ -1,0 +1,7 @@
+---
+- hosts: ubuntu,centos
+  tasks:
+    - ping:
+- hosts: win
+  tasks:
+   - win_ping:

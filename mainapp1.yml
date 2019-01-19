@@ -1,0 +1,18 @@
+---
+- hosts: centos,ubuntu
+  tasks:
+    - name: upload a file if doesn't exist
+      copy:
+        src: /opt/program.sh
+        dest: /home/ansible/program.sh
+        mode: 0755
+    - name: if line not there then add it
+      lineinfile: 
+        state: present
+        dest: /home/ansible/program.sh
+        regexp: '^HOSTNAME='
+        line: HOSTNAME={{ansible_hostname}}
+    - name:
+      shell: /home/ansible/program.sh
+      register: program_output
+    - debug: msg="stdout={{program_output}}"
